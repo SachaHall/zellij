@@ -28,7 +28,7 @@ keybinds {
         bind "k" "Up" { MoveFocus "Up"; }
         bind "p" { SwitchFocus; }
         bind "n" { NewPane; SwitchToMode "Normal"; }
-        bind "+" { SwitchToMode "Pane"; NewPane "Down"; MoveFocus "Down"; NewPane "Right"; MoveFocus "Up"; NewPane "Right"; SwitchToMode "Normal";}
+        bind "+" { SwitchToMode "Pane"; NewPane "Down"; NewPane "Right"; SwitchToMode "Normal"; SwitchToMode "Pane"; MoveFocus "Up"; NewPane "Right"; SwitchToMode "Normal";}
         bind "d" { NewPane "Down"; SwitchToMode "Normal"; }
         bind "r" { NewPane "Right"; SwitchToMode "Normal"; }
         bind "s" { NewPane "stacked"; SwitchToMode "Normal"; }
